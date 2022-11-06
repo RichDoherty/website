@@ -12,7 +12,6 @@ const components = {
   p: (props: JSX.IntrinsicAttributes & ClassAttributes<HTMLParagraphElement> & HTMLAttributes<HTMLParagraphElement>) => <p className='w-4/5 py-3 m-auto text-base lg:w-1/2' {...props} />,
   a: (props: JSX.IntrinsicAttributes & ClassAttributes<HTMLAnchorElement> & AnchorHTMLAttributes<HTMLAnchorElement>) => <a className='underline hover:text-neutral-400' {...props} />,
   ul: (props: JSX.IntrinsicAttributes & ClassAttributes<HTMLUListElement> & HTMLAttributes<HTMLUListElement>) => <ul className='w-4/5 mx-auto space-y-3 text-base list-disc list-inside lg:w-1/2 sm:mb-2 text-neutral-900 marker:text-blue-500' {...props} />,
-  pre: (props: JSX.IntrinsicAttributes & ClassAttributes<HTMLPreElement> & HTMLAttributes<HTMLPreElement>) => <pre className='w-4/5 py-3 m-auto text-base lg:w-1/2 dark:text-neutral-300 text-neutral-900' {...props} />
 }
 
 export default function App({ Component, pageProps }: AppProps) {
