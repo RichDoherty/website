@@ -116,7 +116,7 @@ const TableOfContents = () => {
     useIntersectionObserver(setActiveId);
 
     return (
-        <nav className="w-1/4 py-3 float-right hidden lg:block sticky px-10 mx-auto top-24 max-h-[calc(100vh-40px)] overflow-auto">
+        <nav className="w-1/4 pt-[60px] float-right hidden lg:block sticky px-10 mx-auto top-12 max-h-[calc(100vh-40px)] overflow-auto">
             <Headings headings={nestedHeadings} activeId={activeId} />
         </nav>
     )
