@@ -49,14 +49,15 @@ When working on a blog, being able to focus more on writing and not having to wo
 ### Tailwind
 
 [Tailwind](https://tailwindcss.com/) is a CSS framework that prioritizes utility by using classes. For example, the code below applies the following attributes to the HTML using className without needing to create a separate .css file.
-```css title="css"
-text-align: center,
-font-weight: 500
-``` 
 
 ```html title="html"
 <h1 className="text-center font-medium">Hello, World!</h1>
 ```
+
+```css title="css"
+text-align: center,
+font-weight: 500
+``` 
 
 There are a few reasons why Tailwind has been one of the big highlights of this project for me:
 - The Tailwind [docs](https://tailwindcss.com/docs/installation) are incredibly thorough and it is easy to find the attributes you need with a quick search.
@@ -69,7 +70,7 @@ process. Tailwind is definitely something I would use again on future projects.
 
 ### TypeScript
 
-[TypeScript](https://www.typescriptlang.org/) is a language that is built on top of JavaScript. It adds type safety to JavaScript and catches errors before you even run the code.
+[TypeScript](https://www.typescriptlang.org/) is a language built on top of JavaScript. It adds type safety to JavaScript and catches errors before you even run the code.
 While there is a bit of a learning curve, TypeScript's ability to catch errors early saves a lot of time in the long run.
 
 ### Vercel
@@ -86,17 +87,13 @@ You can see my original portfolio site here: [https://richdoherty.github.io/port
 <Image
     src={oldPortfolio}
     alt="My old portfolio website."
-    width={500}
-    height={500}
-    className="mx-auto"
+    className="h-auto mx-auto rounded-lg"
 />
 
 <Image
     src={newPortfolio}
     alt="My current portfolio website."
-    width={500}
-    height={500}
-    className="mx-auto"
+    className="h-auto mx-auto rounded-lg"
 />
 </div>
 

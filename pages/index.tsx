@@ -66,17 +66,17 @@ export default function Home() {
           <p className='mb-4'>Here you can check out some of the things I&#39;ve been working on or just some things I&#39;ve been interested in.</p>
           <div className='grid grid-cols-1 gap-5 pt-10 border-t-2 md:grid-cols-2 border-neutral-900/5 dark:border-neutral-300/5'>
             <div className='transition-all duration-300 ease-out rounded-lg hover:bg-neutral-300 dark:hover:bg-neutral-800'>
-              <Link href="/posts/how-i-built-my-portfolio">
-                  <p className='text-sm'>Nov 3, 2022</p>
-                  <h3 className='my-1 text-2xl text-transparent bg-clip-text bg-gradient-to-bl from-emerald-500 to-blue-600'>How I Built My Portfolio</h3>
-                  <p>The tech stack I used and some resources that helped me build this site.</p>
-              </Link>
-            </div>
-            <div className='transition-all duration-300 ease-out rounded-lg hover:bg-neutral-300 dark:hover:bg-neutral-800'>
               <Link href="/posts/japanese-flashcards">
                   <p className='text-sm'>Coming Soon!</p>
                   <h3 className='my-1 text-2xl text-transparent bg-clip-text bg-gradient-to-bl from-emerald-500 to-blue-600'>Japanese Flashcard App</h3>
                   <p>An overview of a web-app I made a few years ago that is meant to help people practice Hiragana & Katakana.</p>
+              </Link>
+            </div>
+            <div className='transition-all duration-300 ease-out rounded-lg hover:bg-neutral-300 dark:hover:bg-neutral-800'>
+              <Link href="/posts/how-i-built-my-portfolio">
+                  <p className='text-sm'>Nov 3, 2022</p>
+                  <h3 className='my-1 text-2xl text-transparent bg-clip-text bg-gradient-to-bl from-emerald-500 to-blue-600'>How I Built My Portfolio</h3>
+                  <p>The tech stack I used and some resources that helped me build this site.</p>
               </Link>
             </div>
           </div>
