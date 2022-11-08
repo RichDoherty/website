@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 const getNestedHeadings = (headingElements) => {
     const nestedHeadings = [];
   
-    headingElements.forEach((heading, index) => {
+    headingElements.forEach((heading) => {
       const { innerText: title, id } = heading;
   
       if (heading.nodeName === "H2") {
