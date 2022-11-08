@@ -7,7 +7,16 @@
     body, header {
         @apply transition-colors duration-500 ease-out dark:duration-500 dark:ease-out dark:transition-colors dark:bg-neutral-900;
     }
+    h2, h3 {
+        @apply pt-4 mt-[-16px];
+  }
     p, ul, nav, a {
         @apply transition-colors duration-500 ease-out dark:duration-500 dark:ease-out dark:transition-colors dark:text-neutral-300;
+    }
+    li.active > a {
+        @apply text-blue-500 transition-colors duration-150;
+    }
+    li > a:hover {
+        @apply text-blue-500 transition-colors duration-150;
     }
 }

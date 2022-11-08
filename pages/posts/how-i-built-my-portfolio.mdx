@@ -1,9 +1,10 @@
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import TableOfContents from '../../components/TableOfContents'
+
 import Image from 'next/image'
 import oldPortfolio from '../../public/images/how-i-built-my-portfolio-img/old-portfolio.png'
 import newPortfolio from '../../public/images/how-i-built-my-portfolio-img/new-portfolio.png'
-
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 
 export const meta = {
     title: "How I Built My Portfolio",
@@ -16,6 +17,10 @@ export const meta = {
 <Header />
 
 # {meta.title}
+
+<TableOfContents />
+
+<article className='w-4/5 lg:w-1/2 mx-auto'>
 
 {meta.author} | {meta.date}
 
@@ -83,7 +88,7 @@ every time I make a new commit to this site's repository.
 I made a portfolio a few years back, but I felt it was lacking in a few areas after looking at some other developers' impressive portfolios. 
 You can see my original portfolio site here: [https://richdoherty.github.io/portfolio/](https://richdoherty.github.io/portfolio/).
 
-<div className="grid grid-cols-1 w-4/5 mx-auto md:grid-cols-2 lg:w-1/2">
+<div className="grid grid-cols-1 mx-auto md:grid-cols-2">
 <Image
     src={oldPortfolio}
     alt="My old portfolio website."
@@ -113,5 +118,7 @@ For this site, I was primarily inspired by [Delba Oliveira](https://delba.dev/),
 [Building an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/).
 
 I am very happy with how this site has turned out, and I am hoping to continue updating it with new posts in the future.
+
+</article>
 
 <Footer />

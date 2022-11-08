@@ -1,5 +1,6 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import TableOfContents from '../../components/TableOfContents'
 
 import Image from 'next/image'
 import jpFlashcards from '../../public/images/japanese-flashcards/japanese-flashcards.png'
@@ -17,15 +18,17 @@ export const meta = {
 
 # {meta.title}
 
-{meta.author} | {meta.date}
+<TableOfContents />
 
+<article className='w-4/5 lg:w-1/2 mx-auto'>
+
+{meta.author} | {meta.date}
 
 <Image
     src={jpFlashcards}
     alt="An image of my flashcard app."
-    className='rounded-lg w-4/5 lg:w-1/2 h-auto mx-auto'
+    className='rounded-lg w-full h-auto'
 />
-
 
 [View Project](https://richdoherty.github.io/japanese-flashcards)
 
@@ -249,5 +252,7 @@ These are all the pieces necessary to create a simple flashcard app. If you want
 and swap out the alphabets with one you're interested in. Or you can create your own from scratch using some of the things I wrote about!
 
 Thank you very much for reading this post! I hope you enjoyed it and learned something you can use in your own projects.
+
+</article>
 
 <Footer />

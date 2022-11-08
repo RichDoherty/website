@@ -1,8 +1,11 @@
+import nextMDX from '@next/mdx'
+import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypePrettyCode from 'rehype-pretty-code'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {}
-
-const rehypePrettyCode = require('rehype-pretty-code');
-const fs = require('fs');
  
 const options = {
   // Use one of Shiki's packaged themes
@@ -23,16 +26,17 @@ const options = {
   },
 };
 
-const withMDX = require('@next/mdx')({
+const withMDX = nextMDX({
+  // By default only the .mdx extension is supported.
   extension: /\.mdx?$/,
   options: {
     providerImportSource: '@mdx-js/react',
-    remarkPlugins: [],
-    rehypePlugins: [[rehypePrettyCode, options]],
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [[rehypePrettyCode, options], rehypeSlug, rehypeAutolinkHeadings],
   },
 })
 
-module.exports = withMDX({
+export default withMDX({
   reactStrictMode: true,
   swcMinify: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
