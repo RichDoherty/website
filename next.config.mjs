@@ -9,7 +9,7 @@ const nextConfig = {}
  
 const options = {
   // Use one of Shiki's packaged themes
-  theme: 'nord',
+  theme: 'material-darker',
   onVisitLine(node) {
     // Prevent lines from collapsing in `display: grid` mode, and
     // allow empty lines to be copy/pasted

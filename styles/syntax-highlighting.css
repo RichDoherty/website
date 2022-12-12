@@ -1,6 +1,6 @@
 div[data-rehype-pretty-code-fragment] {
     overflow: hidden;
-    background-color: #2e3440;
+    background-color: #212121;
     border-radius: 0.5rem;
     margin: 1em auto;
 }
@@ -14,8 +14,8 @@ div[data-rehype-pretty-code-fragment] .line {
   }
 
   div[data-rehype-pretty-code-fragment] .line--highlighted {
-    border-left-color: #8fbcbb;
-    background-color: #3b4252;
+    border-left-color: #B0BEC5;
+    background-color: #3F3F3F;
   }
 
 div[data-rehype-pretty-code-fragment] pre {
@@ -32,7 +32,7 @@ div[data-rehype-pretty-code-title] {
     /* stylistic preferences */
     margin-bottom: 0.125rem;
     border-radius: 0.375rem;
-    background-color: #3b4252;
+    background-color: #292929;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     padding-top: 0.25rem;
@@ -41,7 +41,7 @@ div[data-rehype-pretty-code-title] {
         "Liberation Mono", "Courier New", monospace;
     font-size: 0.75rem;
     line-height: 1rem;
-    color: #d8dee9;
+    color: #eeffff;
 }
 
 div[data-rehype-pretty-code-fragment] code {
@@ -61,9 +61,9 @@ code[data-line-numbers] .line::before {
     /* stylistic preferences */
     margin-right: 0.75rem;
     width: 1rem;
-    color: #4c566a;
+    color: #727272;
 }
 
 code[data-line-numbers] .line--highlighted::before {
-    color: #d8dee9;
+    color: #B0BEC5;
 }
