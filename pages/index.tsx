@@ -66,8 +66,15 @@ export default function Home() {
           <p className='mb-4'>Here you can check out some of the things I&#39;ve been working on or just some things I&#39;ve been interested in.</p>
           <div className='grid grid-cols-1 gap-5 pt-10 border-t-2 md:grid-cols-2 border-neutral-900/5 dark:border-neutral-300/5'>
           <div className='transition-all duration-300 ease-out rounded-lg hover:bg-neutral-300 dark:hover:bg-neutral-800'>
+              <Link href="/posts/sorting-algorithms">
+                  <p className='text-sm'>Mar 3, 2023</p>
+                  <h3 className='my-1 text-2xl text-transparent bg-clip-text bg-gradient-to-bl from-emerald-500 to-blue-600'>Sorting Algorithm Visualizer</h3>
+                  <p>A site I created to show how sorting algorithms work.</p>
+              </Link>
+            </div>
+          <div className='transition-all duration-300 ease-out rounded-lg hover:bg-neutral-300 dark:hover:bg-neutral-800'>
               <Link href="/posts/poke-api">
-                  <p className='text-sm'>Jan 20, 2022</p>
+                  <p className='text-sm'>Jan 20, 2023</p>
                   <h3 className='my-1 text-2xl text-transparent bg-clip-text bg-gradient-to-bl from-emerald-500 to-blue-600'>Making Calls to an API (With Pokémon)</h3>
                   <p>A project I worked on to learn more about back-end development.</p>
               </Link>
