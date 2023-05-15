@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-
-
 const ProgressBar = () => {
     const [width, setWidth] = useState(0);
     const scrollListener = () => {
@@ -19,8 +17,11 @@ const ProgressBar = () => {
     });
 
     return (
-        <div style={{ width: width + '%' }} className='fixed h-1 top-16 bg-gradient-to-r from-emerald-500 to-blue-600'></div>
-    )
-}
+        <div
+            style={{ width: width + "%" }}
+            className="fixed h-1 top-16 bg-gradient-to-r from-primary to-secondary"
+        ></div>
+    );
+};
 
 export default ProgressBar;

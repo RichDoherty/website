@@ -4,19 +4,30 @@
 @tailwind utilities;
 
 @layer base {
-    body, header {
-        @apply transition-colors duration-500 ease-out dark:duration-500 dark:ease-out dark:transition-colors dark:bg-neutral-900;
+    :root {
+        --color-primary: 16 185 129;
+        --color-secondary: 37 99 235;
+        --color-darkBg: 23 23 23;
+        --color-lightBg: 229 229 229;
     }
-    h2, h3 {
+    body,
+    header {
+        @apply transition-colors duration-500 ease-out dark:duration-500 dark:ease-out dark:transition-colors dark:bg-darkBg;
+    }
+    h2,
+    h3 {
         @apply pt-4 mt-[-16px];
-  }
-    p, ul, nav, a {
+    }
+    p,
+    ul,
+    nav,
+    a {
         @apply transition-colors duration-500 ease-out dark:duration-500 dark:ease-out dark:transition-colors dark:text-neutral-300;
     }
     li.active > a {
-        @apply text-blue-500 transition-colors duration-150;
+        @apply transition-colors duration-150 text-secondary;
     }
     li > a:hover {
-        @apply text-blue-500 transition-colors duration-150;
+        @apply transition-colors duration-150 text-secondary;
     }
 }
