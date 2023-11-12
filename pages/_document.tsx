@@ -12,6 +12,7 @@ export default function Document() {
                 />
             </Head>
             <body className="min-h-screen">
+                <div className="overlay"></div>
                 <Main />
                 <NextScript />
             </body>
