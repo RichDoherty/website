@@ -204,15 +204,15 @@ const Header = () => {
                             </Link>
                             <Link
                                 className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"
-                                href="/#posts"
+                                href="/posts"
                             >
                                 Posts
                             </Link>
                             <Link
                                 className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"
-                                href="/#contact"
+                                href="/about"
                             >
-                                Contact
+                                About Me
                             </Link>
                         </nav>
                     </div>
