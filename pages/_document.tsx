@@ -7,7 +7,7 @@ export default function Document() {
                 <link rel="shortcut icon" href="/favicon.png" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Rubik&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Rubik&family=Inter&family=Playfair+Display&display=swap"
                     rel="stylesheet"
                 />
             </Head>

@@ -32,7 +32,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                main: ["Raleway"],
+                main: ["Inter"],
             },
         },
     },
