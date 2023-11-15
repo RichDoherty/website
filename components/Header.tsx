@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
@@ -204,9 +206,9 @@ const Header = () => {
                             </Link>
                             <Link
                                 className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"
-                                href="/posts"
+                                href="/blog"
                             >
-                                Posts
+                                Blog
                             </Link>
                             <Link
                                 className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"

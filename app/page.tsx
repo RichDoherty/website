@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Head from "next/head";
 
 export default function Home() {
     return (
@@ -15,7 +14,7 @@ export default function Home() {
                             <h1 className="py-5 text-4xl text-transparent sm:text-5xl md:text-6xl xl:text-7xl bg-clip-text bg-gradient-to-br from-primary to-secondary">
                                 Hi, I&#39;m Richard,
                                 <br />
-                                Full-stack Developer.
+                                Full-Stack Developer.
                             </h1>
                         </div>
                         <div className="w-full my-auto font-normal sm:p-10 lg:w-1/2">
