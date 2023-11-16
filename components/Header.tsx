@@ -191,7 +191,7 @@ const Header = () => {
         <header className="fixed w-full h-16 bg-lightBg drop-shadow-sm">
             <div className="flex items-center justify-between px-10 pt-5">
                 <Link href="/">
-                    <h1 className="inline-block text-xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-primary to-secondary">
+                    <h1 className="inline-block text-xl font-medium text-transparent bg-clip-text bg-gradient-to-tr from-primary to-secondary">
                         richdoherty.dev
                     </h1>
                 </Link>
