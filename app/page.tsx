@@ -29,7 +29,7 @@ export default function Home() {
                                 </p>
                                 <div className="grid grid-cols-1 gap-5 pt-5 border-t-2 md:grid-cols-2 border-neutral-900/5 dark:border-neutral-300/5">
                                     <div className="p-4 transition-all duration-300 ease-out border rounded-lg border-neutral-900/5 dark:border-neutral-300/5 hover:shadow-md hover:shadow-neutral-600/20">
-                                        <Link href="/posts/sorting-algorithms">
+                                        <Link href="/blog/sorting-algorithms">
                                             <p className="text-sm">
                                                 Mar 3, 2023
                                             </p>
@@ -43,7 +43,7 @@ export default function Home() {
                                         </Link>
                                     </div>
                                     <div className="p-4 transition-all duration-300 ease-out border rounded-lg border-neutral-900/5 dark:border-neutral-300/5 hover:shadow-md hover:shadow-neutral-600/20">
-                                        <Link href="/posts/poke-api">
+                                        <Link href="/blog/poke-api">
                                             <p className="text-sm">
                                                 Jan 20, 2023
                                             </p>
@@ -58,7 +58,7 @@ export default function Home() {
                                         </Link>
                                     </div>
                                     <div className="p-4 transition-all duration-300 ease-out border rounded-lg border-neutral-900/5 dark:border-neutral-300/5 hover:shadow-md hover:shadow-neutral-600/20">
-                                        <Link href="/posts/japanese-flashcards">
+                                        <Link href="/blog/japanese-flashcards">
                                             <p className="text-sm">
                                                 Nov 7, 2022
                                             </p>
@@ -74,7 +74,7 @@ export default function Home() {
                                         </Link>
                                     </div>
                                     <div className="p-4 transition-all duration-300 ease-out border rounded-lg border-neutral-900/5 dark:border-neutral-300/5 hover:shadow-md hover:shadow-neutral-600/20">
-                                        <Link href="/posts/how-i-built-my-portfolio">
+                                        <Link href="/blog/how-i-built-my-portfolio">
                                             <p className="text-sm">
                                                 Nov 3, 2022
                                             </p>
