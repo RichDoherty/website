@@ -206,9 +206,9 @@ const Header = () => {
                             </Link>
                             <Link
                                 className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"
-                                href="/blog"
+                                href="/posts"
                             >
-                                Blog
+                                Posts
                             </Link>
                             <Link
                                 className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"

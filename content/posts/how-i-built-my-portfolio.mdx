@@ -1,36 +1,20 @@
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import TableOfContents from '../../components/TableOfContents'
-import ProgressBar from '../../components/ProgressBar'
+---
+title: "How I Built My Portfolio"
+description: "The tech stack I used and some resources that helped me build this site."
+author: "Richard Doherty"
+date: 2022-11-03
+---
 
-import Image from 'next/image'
-import oldPortfolio from '../../public/images/how-i-built-my-portfolio-img/old-portfolio.png'
-import newPortfolio from '../../public/images/how-i-built-my-portfolio-img/new-portfolio.png'
-
-export const meta = {
-    title: "How I Built My Portfolio",
-    description: "The tech stack I used and some resources that helped me build this site.",
-    author: "Richard Doherty",
-    date: "November 3, 2022",
-    slug: "how-i-built-my-portfolio",
-}
-
-<Header />
-
-<ProgressBar />
-
-# {meta.title}
-
-<TableOfContents />
+# {frontmatter.title}
 
 <article className='w-4/5 lg:w-1/2 mx-auto'>
 
-{meta.author} | {meta.date}
+{frontmatter.author} | {frontmatter.date}
 
-I was watching Next.js Conf and wanted to try out Next.js for a new project. I felt my portfolio was lacking so 
+I was watching Next.js Conf and wanted to try out Next.js for a new project. I felt my portfolio was lacking so
 I decided to create a new portfolio and try out writing a blog. Next.js turned out to be perfect for this type of project.
 
-First, I began looking at other people's portfolios and blogs to get some ideas. 
+First, I began looking at other people's portfolios and blogs to get some ideas.
 One portfolio that stood out to me was [Delba Oliveira's](https://delba.dev/), one of the speakers at Next.js Conf.
 Since her website was a sort of portfolio and blog, and because she wrote a very helpful [tutorial](https://delba.dev/blog/how-i-built-my-website-with-nextjs),
 I figured I would use mostly the same tech stack as she did.
@@ -43,10 +27,10 @@ The tech stack I used for this site was Next.js, MDX, Tailwind, and TypeScript.
 
 [Next.js](https://nextjs.org/) is a React framework that has many useful features for building websites. It handles some of the more tedious aspects of development.
 
-- It supports [TypeScript](https://nextjs.org/docs/basic-features/typescript).
-- It has built-in performance optimizations for [fonts](https://nextjs.org/docs/basic-features/font-optimization), [images](https://nextjs.org/docs/basic-features/image-optimization), and [scripts](https://nextjs.org/docs/basic-features/script).
-- The [fast refresh](https://nextjs.org/docs/basic-features/fast-refresh) system, which reloads the page whenever an edit is made, is convenient for development.
-- I also enjoy the way Next.js's [routing](https://nextjs.org/docs/routing/introduction) works, which uses [pages](https://nextjs.org/docs/basic-features/pages) and the file system to organize the routes.
+-   It supports [TypeScript](https://nextjs.org/docs/basic-features/typescript).
+-   It has built-in performance optimizations for [fonts](https://nextjs.org/docs/basic-features/font-optimization), [images](https://nextjs.org/docs/basic-features/image-optimization), and [scripts](https://nextjs.org/docs/basic-features/script).
+-   The [fast refresh](https://nextjs.org/docs/basic-features/fast-refresh) system, which reloads the page whenever an edit is made, is convenient for development.
+-   I also enjoy the way Next.js's [routing](https://nextjs.org/docs/routing/introduction) works, which uses [pages](https://nextjs.org/docs/basic-features/pages) and the file system to organize the routes.
 
 ### MDX
 
@@ -65,13 +49,14 @@ When working on a blog, being able to focus more on writing and not having to wo
 ```css title="css"
 text-align: center,
 font-weight: 500
-``` 
+```
 
 There are a few reasons why Tailwind has been one of the big highlights of this project for me:
-- The Tailwind [docs](https://tailwindcss.com/docs/installation) are incredibly thorough and it is easy to find the attributes you need with a quick search.
-- There are a few VSCode extensions that assist in using Tailwind, namely 
-[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) which provides auto-complete
-and [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) which reorders class names whenever you save a file.
+
+-   The Tailwind [docs](https://tailwindcss.com/docs/installation) are incredibly thorough and it is easy to find the attributes you need with a quick search.
+-   There are a few VSCode extensions that assist in using Tailwind, namely
+    [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) which provides auto-complete
+    and [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) which reorders class names whenever you save a file.
 
 Being able to have everything I need to make the website look how I want contained in a single file and not needing spend time thinking of my own class names sped up the styling
 process. Tailwind is definitely something I would use again on future projects.
@@ -83,33 +68,19 @@ While there is a bit of a learning curve, TypeScript's ability to catch errors e
 
 ### Vercel
 
-[Vercel](https://vercel.com/) is a platform for front-end developers to deploy a website quickly and easily. It also automatically syncs with GitHub and with update 
+[Vercel](https://vercel.com/) is a platform for front-end developers to deploy a website quickly and easily. It also automatically syncs with GitHub and with update
 every time I make a new commit to this site's repository.
 
 ## Comparison
 
-I made a portfolio a few years back, but I felt it was lacking in a few areas after looking at some other developers' impressive portfolios. 
+I made a portfolio a few years back, but I felt it was lacking in a few areas after looking at some other developers' impressive portfolios.
 You can see my original portfolio site here: [https://richdoherty.github.io/portfolio/](https://richdoherty.github.io/portfolio/).
 
-<div className="grid grid-cols-1 mx-auto md:grid-cols-2">
-<Image
-    src={oldPortfolio}
-    alt="My old portfolio website."
-    className="h-auto mx-auto rounded-lg"
-/>
-
-<Image
-    src={newPortfolio}
-    alt="My current portfolio website."
-    className="h-auto mx-auto rounded-lg"
-/>
-</div>
-
-My original portfolio was decent in that it showed off my projects, but I felt it didn't help me stand out from the crowd. I feel my new portfolio, however, 
-stands out more because of the "About Me" and "Blog" sections. I think the more vibrant colors helps as well. I also finally figured out a good way to do 
+My original portfolio was decent in that it showed off my projects, but I felt it didn't help me stand out from the crowd. I feel my new portfolio, however,
+stands out more because of the "About Me" and "Blog" sections. I think the more vibrant colors helps as well. I also finally figured out a good way to do
 a dark mode toggle, which I wasn't able to figure out on my old portfolio.
 
-Utilizing the blog section on this site will allow me to go more in depth on my projects, as well. Instead of simply having a link to my projects, I can also go into 
+Utilizing the blog section on this site will allow me to go more in depth on my projects, as well. Instead of simply having a link to my projects, I can also go into
 more detail about how I made it, and what sorts of problems I ran into and solved.
 
 ## Content
@@ -117,11 +88,9 @@ more detail about how I made it, and what sorts of problems I ran into and solve
 I have set up this site with the intention of using it as a portfolio to show off projects I've worked on, but also a blog. I plan on writing things about topics in tech
 that I think are interesting, or that I've incorporated into my own projects.
 
-For this site, I was primarily inspired by [Delba Oliveira](https://delba.dev/), who I mentioned earlier, and Josh Cormeau's free eBook, 
+For this site, I was primarily inspired by [Delba Oliveira](https://delba.dev/), who I mentioned earlier, and Josh Cormeau's free eBook,
 [Building an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/).
 
 I am very happy with how this site has turned out, and I am hoping to continue updating it with new posts in the future.
 
 </article>
-
-<Footer />

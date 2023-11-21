@@ -1,36 +1,15 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import TableOfContents from "../../components/TableOfContents";
-import ProgressBar from "../../components/ProgressBar";
+---
+title: "Sorting Algorithm Visualizer"
+description: "A site I created to show how sorting algorithms work."
+author: "Richard Doherty"
+date: 2023-03-03
+---
 
-import Image from "next/image";
-import sortingAlgoWebsite from "/public/images/sorting-algorithms/sorting-algorithm-visualizer.png";
-
-export const meta = {
-    title: "Sorting Algorithm Visualizer",
-    description: "A site I created to show how sorting algorithms work.",
-    author: "Richard Doherty",
-    date: "March 3, 2023",
-    slug: "sorting-algorithms",
-};
-
-<Header />
-
-<ProgressBar />
-
-# {meta.title}
-
-<TableOfContents />
+# {frontmatter.title}
 
 <article className='w-4/5 lg:w-1/2 mx-auto'>
 
-{meta.author} | {meta.date}
-
-<Image
-    src={sortingAlgoWebsite}
-    alt="My sorting algorithm visualizer website."
-    className="rounded-lg w-full h-auto"
-/>
+{frontmatter.author} | {frontmatter.date}
 
 [View Project](https://richdoherty.github.io/sorting-algorithms)
 
@@ -503,5 +482,3 @@ I hope you enjoyed seeing the process and I hope you learned something from this
 Thanks for reading!
 
 </article>
-
-<Footer />
