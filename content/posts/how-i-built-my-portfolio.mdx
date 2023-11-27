@@ -5,12 +5,6 @@ author: "Richard Doherty"
 date: 2022-11-03
 ---
 
-# {frontmatter.title}
-
-<article className='w-4/5 lg:w-1/2 mx-auto'>
-
-{frontmatter.author} | {frontmatter.date}
-
 I was watching Next.js Conf and wanted to try out Next.js for a new project. I felt my portfolio was lacking so
 I decided to create a new portfolio and try out writing a blog. Next.js turned out to be perfect for this type of project.
 
@@ -73,6 +67,21 @@ every time I make a new commit to this site's repository.
 
 ## Comparison
 
+<div className="grid grid-cols-1 mx-auto md:grid-cols-2">
+    <Img
+        src="/images/how-i-built-my-portfolio-img/old-portfolio.png"
+        alt="My old portfolio website."
+        width={480}
+        height={546}
+    />
+    <Img
+        src="/images/how-i-built-my-portfolio-img/new-portfolio.png"
+        alt="My new portfolio website."
+        width={1903}
+        height={1451}
+    />
+</div>
+
 I made a portfolio a few years back, but I felt it was lacking in a few areas after looking at some other developers' impressive portfolios.
 You can see my original portfolio site here: [https://richdoherty.github.io/portfolio/](https://richdoherty.github.io/portfolio/).
 
@@ -92,5 +101,3 @@ For this site, I was primarily inspired by [Delba Oliveira](https://delba.dev/),
 [Building an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/).
 
 I am very happy with how this site has turned out, and I am hoping to continue updating it with new posts in the future.
-
-</article>

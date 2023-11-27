@@ -5,11 +5,12 @@ author: "Richard Doherty"
 date: 2022-11-07
 ---
 
-# {frontmatter.title}
-
-<article className='w-4/5 lg:w-1/2 mx-auto'>
-
-{frontmatter.author} | {frontmatter.date}
+<Img
+    src="/images/japanese-flashcards/japanese-flashcards.png"
+    alt="An image of my flashcard app."
+    width={1920}
+    height={965}
+/>
 
 [View Project](https://richdoherty.github.io/japanese-flashcards)
 
@@ -192,6 +193,13 @@ This function is called when the page loads to set "initialCharacter," and whene
 
 ## Toolbar
 
+<Img
+    src="/images/japanese-flashcards/toolbar.png"
+    alt="An image of the toolbar."
+    width={237}
+    height={508}
+/>
+
 Next, another important part of this app is the toolbar. In this component, it will be possible to change the language on
 the front of the cards, change between Hiragana and Katakana, see the score, and move on to the next card.
 
@@ -227,5 +235,3 @@ These are all the pieces necessary to create a simple flashcard app. If you want
 and swap out the alphabets with one you're interested in. Or you can create your own from scratch using some of the things I wrote about!
 
 Thank you very much for reading this post! I hope you enjoyed it and learned something you can use in your own projects.
-
-</article>

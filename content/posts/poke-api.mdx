@@ -5,11 +5,12 @@ author: "Richard Doherty"
 date: 2023-01-20
 ---
 
-# {frontmatter.title}
-
-<article className='w-4/5 lg:w-1/2 mx-auto'>
-
-{frontmatter.author} | {frontmatter.date}
+<Img
+    src={"/images/poke-api/pokédex.png"}
+    alt="An image of my pokedex app."
+    width={1903}
+    height={965}
+/>
 
 [View Project](https://pokedex-richdoherty.vercel.app)
 
@@ -74,6 +75,13 @@ export async function getStaticProps() {
 The data is fetched from the API, turned into json, and returned as props.
 
 I like to console.log() the data to make sure it is being retrieved correctly. Here is what that data looks like.
+
+<Img
+    src="/images/poke-api/consolelog.png"
+    alt="The array of pokemon data fetched from PokeApi."
+    width={630}
+    height={598}
+/>
 
 ## Displaying the data
 
@@ -180,6 +188,13 @@ module.exports = nextConfig;
 ```
 
 Your app should now look like this:
+
+<Img
+    src="/images/poke-api/pokedexProgress1.png"
+    alt="Pokedex App with no styling."
+    width={1903}
+    height={956}
+/>
 
 ### Adding Background Color
 
@@ -338,10 +353,15 @@ you want.
 
 With some styling, the page should now look like this:
 
+<Img
+    src="/images/poke-api/bulbasaur.png"
+    alt="The page containing more information about Bulbasaur"
+    width={1920}
+    height={965}
+/>
+
 ## Conclusion
 
 That's about it! You can find the code on my [GitHub](https://github.com/RichDoherty/pokedex)
 if you want to take a look at the code or see how I styled mine. Or you can style yours from scratch.
 I hope this post was informative and thank you for reading!
-
-</article>
