@@ -1,6 +1,6 @@
 div[data-rehype-pretty-code-fragment] {
     overflow: hidden;
-    background-color: #212121;
+    background-color: #000;
     border-radius: 0.5rem;
     margin: 1em auto;
 }
@@ -11,28 +11,28 @@ div[data-rehype-pretty-code-fragment] .line {
     padding-right: 0.75rem;
     border-left-width: 4px;
     border-left-color: transparent;
-  }
+}
 
-  div[data-rehype-pretty-code-fragment] .line--highlighted {
-    border-left-color: #B0BEC5;
-    background-color: #3F3F3F;
-  }
+div[data-rehype-pretty-code-fragment] .line--highlighted {
+    border-left-color: #bfbaaa;
+    background-color: #eeeeee08;
+}
 
 div[data-rehype-pretty-code-fragment] pre {
     overflow-x: auto;
-   
+
     /* stylist preferences */
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
-  }
+}
 
 div[data-rehype-pretty-code-title] {
     /* stylistic preferences */
     margin-bottom: 0.125rem;
     border-radius: 0.375rem;
-    background-color: #292929;
+    background-color: #000;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     padding-top: 0.25rem;
@@ -41,7 +41,7 @@ div[data-rehype-pretty-code-title] {
         "Liberation Mono", "Courier New", monospace;
     font-size: 0.75rem;
     line-height: 1rem;
-    color: #eeffff;
+    color: #bfbaaa;
 }
 
 div[data-rehype-pretty-code-fragment] code {
@@ -51,19 +51,35 @@ div[data-rehype-pretty-code-fragment] code {
 code[data-line-numbers] {
     counter-reset: lineNumber;
 }
-   
+
 code[data-line-numbers] .line::before {
     counter-increment: lineNumber;
     content: counter(lineNumber);
     display: inline-block;
     text-align: right;
-   
+
     /* stylistic preferences */
     margin-right: 0.75rem;
     width: 1rem;
-    color: #727272;
+    color: #dedcd550;
 }
 
 code[data-line-numbers] .line--highlighted::before {
-    color: #B0BEC5;
+    color: #bfbaaa;
+}
+
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+    div[data-theme="light"],
+    pre[data-theme="light"],
+    code[data-theme="light"] {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    div[data-theme="dark"],
+    pre[data-theme="dark"],
+    code[data-theme="dark"] {
+        display: none;
+    }
 }
