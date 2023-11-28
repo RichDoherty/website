@@ -46,7 +46,7 @@ const prettyCodeOptions = {
         dark: "vitesse-dark",
         light: "vitesse-light",
     },
-    onVisitLine(node) {
+    onVisitLine(node: { children: string | any[] }) {
         // Prevent lines from collapsing in `display: grid` mode, and
         // allow empty lines to be copy/pasted
         if (node.children.length === 0) {
@@ -54,10 +54,10 @@ const prettyCodeOptions = {
         }
     },
     // Feel free to add classNames that suit your docs
-    onVisitHighlightedLine(node) {
+    onVisitHighlightedLine(node: { properties: { className: string[] } }) {
         node.properties.className.push("line--highlighted");
     },
-    onVisitHighlightedWord(node) {
+    onVisitHighlightedWord(node: { properties: { className: string[] } }) {
         node.properties.className = ["word"];
     },
 };

@@ -18,7 +18,7 @@ export const components = {
             HTMLAttributes<HTMLHeadingElement>
     ) => (
         <h2
-            className="pt-16 pb-3 m-auto text-3xl transition-colors duration-500 ease-out border-t-2 dark:duration-500 dark:ease-out dark:transition-colors dark:text-neutral-300 text-neutral-900 border-neutral-900/5 dark:border-neutral-300/5"
+            className="pt-16 pb-3 m-auto text-3xl border-t-2 dark:text-neutral-300 text-neutral-900 border-neutral-900/5 dark:border-neutral-300/5"
             {...props}
         />
     ),
@@ -28,7 +28,7 @@ export const components = {
             HTMLAttributes<HTMLHeadingElement>
     ) => (
         <h3
-            className="pt-16 pb-3 m-auto text-2xl transition-colors duration-500 ease-out border-t-2 dark:duration-500 dark:ease-out dark:transition-colors dark:text-neutral-300 text-neutral-900 border-neutral-900/5 dark:border-neutral-300/5"
+            className="pt-16 pb-3 m-auto text-2xl border-t-2 dark:text-neutral-300 text-neutral-900 border-neutral-900/5 dark:border-neutral-300/5"
             {...props}
         />
     ),

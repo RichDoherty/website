@@ -7,12 +7,12 @@
     :root {
         --color-primary: 16 185 129;
         --color-secondary: 37 99 235;
-        --color-darkBg: 23 23 23;
+        --color-darkBg: 10 10 10;
         --color-lightBg: 229 229 229;
     }
     body,
     header {
-        @apply transition-colors duration-500 ease-out dark:duration-500 dark:ease-out dark:transition-colors dark:bg-darkBg;
+        @apply dark:bg-darkBg;
     }
     h2,
     h3 {
@@ -22,13 +22,13 @@
     ul,
     nav,
     a {
-        @apply transition-colors duration-500 ease-out dark:duration-500 dark:ease-out dark:transition-colors dark:text-neutral-300;
+        @apply dark:text-neutral-300;
     }
     li.active > a {
-        @apply transition-colors duration-150 text-secondary;
+        @apply text-secondary;
     }
     li > a:hover {
-        @apply transition-colors duration-150 text-secondary;
+        @apply text-secondary;
     }
 
     .overlay {

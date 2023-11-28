@@ -20,10 +20,10 @@ export default function Page({ params }: { params: { slug: string } }) {
         <>
             <Header />
             <ProgressBar />
-            <h1 className="w-4/5 pt-24 pb-10 m-auto text-5xl text-transparent lg:w-1/2 md:text-6xl xl:text-7xl bg-clip-text bg-gradient-to-bl from-primary to-secondary">
+            <h1 className="w-4/5 pt-24 pb-10 m-auto text-5xl text-transparent xl:w-1/2 md:text-6xl xl:text-7xl bg-clip-text bg-gradient-to-bl from-primary to-secondary">
                 {post.title}
             </h1>
-            <article className="w-4/5 mx-auto lg:w-1/2">
+            <article className="w-4/5 mx-auto xl:w-1/2">
                 <p className="py-3 m-auto text-base">
                     {post.author} |{" "}
                     {format(parseISO(post.date), "LLLL d, yyyy")}

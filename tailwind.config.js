@@ -31,11 +31,6 @@ module.exports = {
             pink: colors.pink,
             rose: colors.rose,
         },
-        extend: {
-            fontFamily: {
-                main: ["Inter"],
-            },
-        },
     },
     future: {
         hoverOnlyWhenSupported: true,

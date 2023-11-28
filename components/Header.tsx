@@ -68,7 +68,7 @@ const Header = () => {
 
     const darkBgColors: Color[] = [
         { name: "black", class: "bg-[#000]", code: "0 0 0" },
-        { name: "darkGray", class: "bg-neutral-900", code: "23 23 23" },
+        { name: "darkGray", class: "bg-neutral-950", code: "10 10 10" },
         { name: "rose", class: "bg-rose-950", code: "76 5 25" },
         { name: "blue", class: "bg-blue-950", code: "23 37 84" },
         { name: "indigo", class: "bg-indigo-950", code: "30 27 75" },
@@ -179,7 +179,7 @@ const Header = () => {
             );
             return (
                 <MoonIcon
-                    className="w-6 h-6 text-neutral-900"
+                    className="w-6 h-6 text-neutral-950"
                     role="button"
                     onClick={() => setTheme("dark")}
                 />
@@ -199,19 +199,19 @@ const Header = () => {
                     <div className="flex">
                         <nav className="invisible w-0 px-3 sm:w-full sm:visible text-neutral-900 bg-clip-text bg-gradient-to-l from-primary to-secondary">
                             <Link
-                                className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"
+                                className="px-3 hover:text-transparent"
                                 href="/"
                             >
                                 Home
                             </Link>
                             <Link
-                                className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"
+                                className="px-3 hover:text-transparent"
                                 href="/posts"
                             >
                                 Posts
                             </Link>
                             <Link
-                                className="px-3 transition-all duration-300 ease-out dark:duration-300 dark:ease-out hover:text-transparent"
+                                className="px-3 hover:text-transparent"
                                 href="/about"
                             >
                                 About Me

@@ -14,7 +14,7 @@ div[data-rehype-pretty-code-fragment] .line {
 }
 
 div[data-rehype-pretty-code-fragment] .line--highlighted {
-    border-left-color: #bfbaaa;
+    border-left-color: #121212;
     background-color: #eeeeee08;
 }
 
@@ -68,7 +68,7 @@ code[data-line-numbers] .line--highlighted::before {
     color: #bfbaaa;
 }
 
-@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+:is(.dark) {
     div[data-theme="light"],
     pre[data-theme="light"],
     code[data-theme="light"] {
@@ -76,10 +76,27 @@ code[data-line-numbers] .line--highlighted::before {
     }
 }
 
-@media (prefers-color-scheme: light) {
+:is(.light) {
     div[data-theme="dark"],
     pre[data-theme="dark"],
     code[data-theme="dark"] {
         display: none;
+    }
+    div[data-rehype-pretty-code-fragment] {
+        background-color: #fff;
+    }
+    div[data-rehype-pretty-code-title] {
+        background-color: #fff;
+        color: #4e4f47;
+    }
+    div[data-rehype-pretty-code-fragment] .line--highlighted {
+        border-left-color: #e2e2e2;
+        background-color: #f7f7f7;
+    }
+    code[data-line-numbers] .line::before {
+        color: #393a3450;
+    }
+    code[data-line-numbers] .line--highlighted::before {
+        color: #4e4f47;
     }
 }
