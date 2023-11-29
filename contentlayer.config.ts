@@ -63,7 +63,7 @@ const prettyCodeOptions = {
 };
 
 export default makeSource({
-    contentDirPath: "content",
+    contentDirPath: "posts",
     documentTypes: [Post],
     mdx: {
         remarkPlugins: [remarkGfm, remarkFrontmatter],
