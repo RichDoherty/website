@@ -1,5 +1,5 @@
-import Header from "../../components/Header";
-import PostCard from "../../components/PostCard";
+import Header from "components/Header";
+import PostCard from "components/PostCard";
 import { compareDesc } from "date-fns";
 import { allPosts } from "contentlayer/generated";
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 export default function Home() {
     return (
@@ -9,7 +9,7 @@ export default function Home() {
             <Header />
             <main>
                 <div id="" className="flex flex-col">
-                    <div className="flex flex-col mt-20 lg:flex-row">
+                    <div className="flex flex-col mt-16 lg:flex-row">
                         <div className="w-full p-10 pb-0 sm:pb-10 xl:my-auto lg:w-1/2">
                             <h1 className="py-5 text-4xl text-transparent sm:text-5xl md:text-6xl xl:text-7xl bg-clip-text bg-gradient-to-br from-primary to-secondary">
                                 Hi, I&#39;m Richard,

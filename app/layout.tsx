@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={inter.className}>
-            <body className="min-h-screen bg-lightBg dark:bg-darkBg">
+            <body className="bg-lightBg dark:bg-darkBg">
                 <div className="overlay"></div>
                 <Providers>{children}</Providers>
             </body>
